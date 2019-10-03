@@ -173,9 +173,15 @@ var getData = function getData(t, pastelesArray, gelatinasArray, panaderiaArray,
 };
 
 var showData = function showData(active, type) {
+  var lengthType = type.length - 1;
+  var itemIndex = active.dataset.index;
+  var lS = '';
+  var rS = '';
+  if (itemIndex === '0') lS = 'noshow';
+  if (type.indexOf(active) === lengthType) rS = 'noshow';
   var modal = document.createElement('div');
   modal.className = 'modal';
-  modal.innerHTML = "\n    <div class=\"modal__close\"><img src=\"img/icons/close.svg\" alt=\"\" class=\"close\"></div>\n    <div class=\"arrow left prev\"><img src=\"img/icons/left.svg\" alt=\"\"></div>\n    <div class=\"arrow right next\"><img src=\"img/icons/right.svg\" alt=\"\"></div>\n    <div class=\"modal__container\">\n        <img src=\"".concat(active.dataset.url, "\" class=\"modal__img\" alt=\"\">\n        <p class=\"modal__name\">").concat(active.dataset.name, "</p>\n        <p class=\"modal__description\">").concat(active.dataset.description, "</p>\n\n    </div>\n  ");
+  modal.innerHTML = "\n    <div class=\"modal__close\"><img src=\"img/icons/close.svg\" alt=\"\" class=\"close\"></div>    \n    <div class=\"arrow left prev ".concat(lS, "\"><img src=\"img/icons/left.svg\" alt=\"\"></div>\n    <div class=\"arrow right next ").concat(rS, "\"><img src=\"img/icons/right.svg\" alt=\"\"></div>\n    <div class=\"modal__container\">\n        <img src=\"").concat(active.dataset.url, "\" class=\"modal__img\" alt=\"\">\n        <p class=\"modal__name\">").concat(active.dataset.name, "</p>\n        <p class=\"modal__description\">").concat(active.dataset.description, "</p>\n\n    </div>\n  ");
   document.body.appendChild(modal);
   closeModal(modal);
   navigateModal(modal, type, active);
