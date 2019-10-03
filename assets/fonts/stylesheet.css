@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Regular.woff2') format('woff2'),
+        url('Rockwell-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Italic.woff2') format('woff2'),
+        url('Rockwell-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-Bold.woff2') format('woff2'),
+        url('Rockwell-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell';
+    src: url('Rockwell-BoldItalic.woff2') format('woff2'),
+        url('Rockwell-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('ChunkFive-Regular.woff2') format('woff2'),
+        url('ChunkFive-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+

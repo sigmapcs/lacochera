@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>La Cochera Pasteleria | Pastel</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Crea tu pastel La Cochera">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width user-scalable=no maximum-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lacochera">
+    <meta property="og:title" content="Pastel">
+    <meta property="og:description" content="Crea tu pastel La Cochera">
+    <meta property="og:image" content="img/tupastel/tupastel1.jpg">
+    <meta property="og:image" content="img/tupastel/tupastel1.jpg">
+    <link rel="canonical" href="./index.html">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css?t=1570067507943">
+    <link rel="stylesheet" href="css/styles.css?t=1570067507943">
+    <link rel="shortcut icon" href="img/favicon.png">
+  </head>
+  <body class="Pastel">
+    <header class="main-header" id="mainHeader"> 
+      <h1>La Cochera<span>Pasteleria fina desde 1986</span></h1>
+      <div class="logo-container"><a class="logo" href="/"><img class="main-logo" id="main-logo" src="img/logo.png" alt="Logotipo La cochera"></a></div>
+      <div class="toggle-menu" id="toggle-menu"><img src="img/icons/menu.svg" alt="La cochera hamburger menu"></div>
+      <div class="menu-wraper" id="menu-wraper">
+        <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
+          <ul class="main-menu" id="main-menu">
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
+            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="section-main section-top">
+        <div class="section-top-grid">
+          <div class="section-top-text">
+            <h2 class="section-title">Tu Pastel</h2>
+            <p>Crea tu pastel personalizado para esas fechas especiales. El proceso es muy fácil, sólo selecciona en el siguiente formato las especificaciones de lo que deseas, imprímelo, preséntalo en caja y ¡listo!.</p>
+            <p>El total de tu creación y el tiempo de entrega variará acorde a lo que hayas escogido. Cualquier duda puedes preguntarla a nuestro personal en tienda o mediante nuestra sección de Contacto.</p>
+          </div>
+          <div class="section-top-img"><img src="img/tupastel/tupastel1.jpg" alt="Pastel La cochera"></div>
+        </div>
+      </section>
+      <section class="main-section container formulario">
+        <h2 class="section-title center">Formulario</h2>
+        <form class="form" action="topdf" method="post" id="formPastel">
+          <div class="input-group">
+            <label for="person-number">Selecciona el número de personas:</label>
+            <div class="box input">
+              <input id="person-number" name="person-number" required pattern="^\d+$">
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="event-type">Tipo de Evento:</label>
+            <div class="box select">
+              <select id="event-type" name="event-type" required onFocus="expand(this)">
+                <option value="Bautizo">Bautizo</option>
+                <option value="Primera Comunión">Primera Comunión</option>
+                <option value="Boda">Boda</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="bread-flavor">Sabor de Pan:</label>
+            <div class="box select">
+              <select id="bread-flavor" name="bread-flavor" required onFocus="expand(this)">
+                <option value="Vainilla">Vainilla</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="description">Descripción:</label>
+            <div class="box select">
+              <select id="description" name="description" required onFocus="expand(this)">
+                <option value="Lorem ipsum dolor sit amet, consectetuer adipiscing elit">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</option>
+                <option value="Lorem ipsum dolor sit amet, consectetuer adipiscing elit">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</option>
+                <option value="Lorem ipsum dolor sit amet, consectetuer adipiscing elit">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group textarea">
+            <label for="info">Información Adicional:</label>
+            <div class="box textarea">
+              <textarea id="info" name="info"></textarea>
+            </div>
+          </div>
+          <footer class="form-footer">
+            <button class="btn btn-download">Descargar</button>
+          </footer>
+        </form>
+      </section>
+    </main>
+    <div class="main-footer">
+      <ul>
+        <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
+        <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
+        <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
+      </ul>
+    </div>
+    <section class="is-mobile" id="isMobile"><img src="img/smartphonel.svg" alt="Cell phone">
+      <p>Por favor gire su teléfono</p>
+    </section>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <script src="js/scripts-min.js?t=1570067507943"></script>
+  </body>
+</html>
