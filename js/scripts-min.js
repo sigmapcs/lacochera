@@ -56,18 +56,36 @@ var tabsContainer = document.getElementById('tabsProducts');
 var panels = document.getElementById('panels');
 var formPastel = document.getElementById('formPastel');
 
-var sucursales = _toConsumableArray(document.querySelectorAll('.sucursal__map')); // if (nav && header) 
+var sucursales = _toConsumableArray(document.querySelectorAll('.sucursal__map'));
 
-
-(0, _scrollMenu.scrollMenu)(nav, header, isMobile.mobilecheck());
+var body = document.body;
+if (nav && header) (0, _scrollMenu.scrollMenu)(nav, header, isMobile.mobilecheck());
 if (tabsContainer) (0, _products.tabs)(tabsContainer);
 if (panels) (0, _products.lightBox)(panels);
 if (formPastel) (0, _toPdf.toPDF)(formPastel);
-if (sucursales) (0, _sucursales.sucursalMapHeight)(sucursales, isMobile.mobilecheck());
+if (body.classList.contains('Sucursales')) (0, _sucursales.sucursalMapHeight)(sucursales, isMobile.mobilecheck());
 
 var phonesArr = _toConsumableArray(document.querySelectorAll('.jsPhone'));
 
 if (phonesArr) (0, _sucursales.phones)(phonesArr, isMobile.mobilecheck());
+
+(function (w, d, dd, c) {
+  var inputs = _toConsumableArray(d.querySelectorAll('input,textarea'));
+
+  var mobile = d.getElementById('isMobile');
+  console.log(inputs);
+
+  if (inputs) {
+    inputs.map(function (el) {
+      el.addEventListener('focus', function (e) {
+        if (mobile) mobile.classList.add('no-show'); // alert(mobile.classList)
+      });
+      el.addEventListener('blur', function (e) {
+        if (mobile) mobile.classList.remove('no-show');
+      });
+    });
+  }
+})(window, document, document.documentElement, console);
 /*
   102 -> 100%
   250 -> ?
