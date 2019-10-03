@@ -64,6 +64,10 @@ if (tabsContainer) (0, _products.tabs)(tabsContainer);
 if (panels) (0, _products.lightBox)(panels);
 if (formPastel) (0, _toPdf.toPDF)(formPastel);
 if (sucursales) (0, _sucursales.sucursalMapHeight)(sucursales, isMobile.mobilecheck());
+
+var phonesArr = _toConsumableArray(document.querySelectorAll('.jsPhone'));
+
+if (phonesArr) (0, _sucursales.phones)(phonesArr, isMobile.mobilecheck());
 /*
   102 -> 100%
   250 -> ?
@@ -238,7 +242,7 @@ exports.scrollMenu = scrollMenu;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sucursalMapHeight = void 0;
+exports.phones = exports.sucursalMapHeight = void 0;
 
 var sucursalMapHeight = function sucursalMapHeight(sucursales, isMobile) {
   var sW = sucursales[0].clientWidth;
@@ -259,7 +263,6 @@ var sucursalMapHeight = function sucursalMapHeight(sucursales, isMobile) {
     el.appendChild(img);
   });
   document.addEventListener('click', function (e) {
-    e.preventDefault();
     var t = e.target;
     var parent = t.parentElement;
 
@@ -291,6 +294,19 @@ var closeModal = function closeModal(modal) {
     }
   });
 };
+
+var phones = function phones(phonesArr, ismobile) {
+  phonesArr.map(function (phone) {
+    var phoneNewText = phone.textContent.replace(/ /g, "");
+    var phoneNewText1 = phoneNewText.replace('Tel.:', '');
+
+    if (isMobile) {
+      phone.innerHTML = "<a href=\"tel:".concat(phoneNewText1, "\">").concat(phone.textContent, "</a>");
+    }
+  });
+};
+
+exports.phones = phones;
 
 },{}],5:[function(require,module,exports){
 "use strict";
