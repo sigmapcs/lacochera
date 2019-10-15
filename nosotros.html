@@ -14,55 +14,57 @@
     <meta property="og:site_name" content="La Cochera Pasteleria">
     <meta property="og:url" content="https://sigmapcs.github.io/lacochera/nosotro.html">
     <link rel="canonical" href="https://sigmapcs.github.io/lacochera/nosotro.html">
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css?t=1571167116915">
+    <link rel="stylesheet" href="css/styles.css?t=1571167116915">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body class="Nosotros">
+    <section class="modal loading" id="loading">
+      <div class="loading__container"><img src="img/logo.png" alt="Logotipo La cochera">
+        <div class="load" id="load"></div>
+      </div>
+    </section>
     <header class="main-header" id="mainHeader"> 
       <h1>La Cochera<span>Pasteleria fina desde 1986</span></h1>
       <div class="logo-container"><a class="logo" href="index.html"><img class="main-logo" id="main-logo" src="img/logo.png" alt="Logotipo La cochera"></a></div>
       <div class="toggle-menu" id="toggle-menu"><img src="img/icons/menu.svg" alt="La cochera hamburger menu"></div>
-      <div class="menu-wraper" id="menu-wraper">
-        <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
-          <ul class="main-menu" id="main-menu">
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
-            <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
-          </ul>
-        </nav>
-      </div>
+      <!--.menu-wraper#menu-wraper-->
     </header>
+    <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
+      <ul class="main-menu" id="main-menu">
+        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
+        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
+        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
+      </ul>
+    </nav>
     <main class="main" id="main">
       <section class="banner full"><img src="img/nosotros/nosotros01.jpg" alt="Pan con cafe La Cochera"></section>
       <section class="container full" itemscope itemtype="http://schema.org/WebPage">
-        <div class="Inicio__grid">
-          <h2 class="section-title">Nosotros</h2>
-          <div class="Inicio__text grid-text" itemtype="about">
-            <div class="text-wrapper1">
-              <p>Somos una empresa familiar creada en 1986. Nuestros productos están hechos con recetas que van pasando de generación tras generación, conservando ese sabor y calidez que identifican a la alta repostería mexicana.</p>
-              <p>Ofrecemos café de la mejor calidad, sembrado y cosechado dentro de nuestro país en estados como Oaxaca, Veracruz, Chiapas, Michoacán, Jalisco y Colima.</p>
-            </div>
-            <div class="text-wrapper2">
-              <p>Hoy en día, hablar de La Cochera es hablar de un símbolo representativo de la región, donde tanto nacionales como extranjeros no dejan pasar la oportunidad de venir y disfrutar de esta experiencia única y llena de tradición.</p>
-              <p>La gran variedad de productos que ofrecemos abarcan los diferentes gustos de nuestra clientela, creando así un ambiente familiar único, con una atención de primera calidad.</p>
-            </div>
+        <h2 class="section-title">Nosotros</h2>
+        <article class="Nosotros__grid" itemtype="about">
+          <div class="text-wrapper">
+            <p>Somos una empresa familiar creada en 1986. Nuestros productos están hechos con recetas que van pasando de generación tras generación, conservando ese sabor y calidez que identifican a la alta repostería mexicana.</p>
+            <p>Ofrecemos café de la mejor calidad, sembrado y cosechado dentro de nuestro país en estados como Oaxaca, Veracruz, Chiapas, Michoacán, Jalisco y Colima.</p>
           </div>
-        </div>
+          <div class="text-wrapper">
+            <p>Hoy en día, hablar de La Cochera es hablar de un símbolo representativo de la región, donde tanto nacionales como extranjeros no dejan pasar la oportunidad de venir y disfrutar de esta experiencia única y llena de tradición.</p>
+            <p>La gran variedad de productos que ofrecemos abarcan los diferentes gustos de nuestra clientela, creando así un ambiente familiar único, con una atención de primera calidad.</p>
+          </div>
+        </article>
       </section>
       <section class="banner left"><img src="img/nosotros/nosotros02.jpg" alt="cafe La cochera"></section>
     </main>
-    <div class="main-footer">
-      <ul>
+    <footer class="main-footer" id="mainFooter">
+      <ul class="social-network">
         <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
         <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
         <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
       </ul>
-    </div>
-    <section class="is-mobile" id="isMobile"><img src="img/smartphonel.svg" alt="Cell phone">
-      <p>Por favor gire su teléfono</p>
-    </section>
-    <script src="js/scripts-min.js"></script>
+    </footer>
+    <!--section.is-mobile#isMobile-->
+    <!--  img(src="img/smartphonel.svg" alt="Cell phone")-->
+    <!--  p Por favor gire su teléfono-->
+    <script src="js/scripts-min.js?t=1571167116915"></script>
   </body>
 </html>

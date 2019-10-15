@@ -2,58 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         
-        <loc>http://iatrikos.com/</loc>
+        <loc>https://sigmapcs.github.io/lacochera/</loc>
     
         
-        <lastmod>2019-10-04T02:20:31.669Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://iatrikos.com/nosotros.html</loc>
-    
-        
-        <lastmod>2019-10-04T02:20:31.700Z</lastmod>
+        <lastmod>2019-10-15T19:18:37.554Z</lastmod>
     
     </url>
     <url>
         
-        <loc>http://iatrikos.com/productos.html</loc>
+        <loc>https://sigmapcs.github.io/lacochera/nosotros.html</loc>
     
         
-        <lastmod>2019-10-04T02:20:31.816Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://iatrikos.com/sucursales.html</loc>
-    
-        
-        <lastmod>2019-10-04T02:20:31.863Z</lastmod>
+        <lastmod>2019-10-15T19:18:39.294Z</lastmod>
     
     </url>
     <url>
         
-        <loc>http://iatrikos.com/tu-pastel.html</loc>
+        <loc>https://sigmapcs.github.io/lacochera/productos.html</loc>
     
         
-        <lastmod>2019-10-04T02:20:31.910Z</lastmod>
-    
-    </url>
-    <url>
-        
-        <loc>http://iatrikos.com/public/</loc>
-    
-        
-        <lastmod>2019-10-04T02:20:31.925Z</lastmod>
+        <lastmod>2019-10-15T19:18:39.685Z</lastmod>
     
     </url>
     <url>
         
-        <loc>http://iatrikos.com/assets/fonts/demo.html</loc>
+        <loc>https://sigmapcs.github.io/lacochera/sucursales.html</loc>
     
         
-        <lastmod>2019-10-04T02:20:31.956Z</lastmod>
+        <lastmod>2019-10-15T19:18:39.695Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sigmapcs.github.io/lacochera/tu-pastel.html</loc>
+    
+        
+        <lastmod>2019-10-15T19:18:39.716Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>https://sigmapcs.github.io/lacochera/assets/fonts/demo.html</loc>
+    
+        
+        <lastmod>2019-10-15T19:18:39.728Z</lastmod>
     
     </url>
 </urlset>
