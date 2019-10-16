@@ -14,54 +14,80 @@
     <meta property="og:site_name" content="La Cochera Pasteleria">
     <meta property="og:url" content="https://sigmapcs.github.io/lacochera/">
     <link rel="canonical" href="https://sigmapcs.github.io/lacochera/">
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css?t=1571262520058">
+    <link rel="stylesheet" href="css/styles.css?t=1571262520058">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body class="Inicio">
-    <section class="modal loading" id="loading">
-      <div class="loading__container"><img src="img/logo.png" alt="Logotipo La cochera">
-        <div class="load" id="load"></div>
-      </div>
-    </section>
-    <header class="main-header" id="mainHeader"> 
-      <h1>La Cochera<span>Pasteleria fina desde 1986</span></h1>
-      <div class="logo-container"><a class="logo" href="index.html"><img class="main-logo" id="main-logo" src="img/logo.svg" alt="Logotipo La cochera"></a></div>
-      <div class="toggle-menu" id="toggle-menu"><img src="img/icons/menu.svg" alt="La cochera hamburger menu"></div>
-      <!--.menu-wraper#menu-wraper-->
-    </header>
-    <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
-      <ul class="main-menu" id="main-menu">
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
-      </ul>
-    </nav>
-    <main class="main" id="main">
-      <section class="banner full"><img src="img/home/home01.jpg" alt="Pan con cafe La Cochera"></section>
-      <section class="container full">
-        <div class="Inicio__grid">
-          <div class="Inicio__img nomobile"><img src="img/home/home02.jpg" alt="pan La cochera"></div>
-          <div class="Inicio__text">
-            <h2 class="section-title">Recetas con tradición</h2>
-            <p>Son más de 30 años los que llevamos creando productos de calidad con una meta en particular: crear sonrisas en cada bocado y en cada probada.</p>
-            <p>Queremos que tu experiencia en La Cochera sea llena de momentos dignos de recordar.</p>
-          </div>
+    <div class="wrapper-page">
+      <section class="modal loading" id="loading">
+        <div class="loading__container"><img src="img/logo.svg" alt="Logotipo La cochera">
+          <div class="load" id="load"></div>
         </div>
       </section>
-      <section class="banner right"><img src="img/home/home03.jpg" alt="pastelero La cochera"></section>
-    </main>
-    <footer class="main-footer" id="mainFooter">
-      <ul class="social-network">
-        <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
-        <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
-        <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
-      </ul>
-    </footer>
-    <!--section.is-mobile#isMobile-->
-    <!--  img(src="img/smartphonel.svg" alt="Cell phone")-->
-    <!--  p Por favor gire su teléfono-->
-    <script src="js/scripts-min.js"></script>
+      <header class="main-header" id="mainHeader"> 
+        <h1>La Cochera<span>Pasteleria fina desde 1986</span></h1>
+        <div class="logo-container"><a class="logo" href="index.html"><img class="main-logo" id="main-logo" src="img/logo.svg" alt="Logotipo La cochera"></a></div>
+        <div class="toggle-menu" id="toggle-menu"><img src="img/icons/menu.svg" alt="La cochera hamburger menu"></div>
+        <!--.menu-wraper#menu-wraper-->
+      </header>
+      <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
+        <ul class="main-menu" id="main-menu">
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
+        </ul>
+      </nav>
+      <main class="main" id="main">
+        <section class="banner full">
+          <picture>
+            <source srcset="img/home/home01.jpg" media="(min-width: 1081px"/>
+            <source srcset="img/home/home01l.jpg" media="(min-width: 800px"/>
+            <source srcset="img/home/home01m.jpg" media="(min-width: 600px"/>
+            <source srcset="img/home/home01s.jpg" media="(min-width: 100px"/><img src="img/maps/home/home01s.jpg" alt="Pan con cafe La Cochera"/>
+          </picture>
+          <!--img(src= pageImage alt="Pan con cafe La Cochera")-->
+        </section>
+        <section class="container full">
+          <div class="Inicio__grid">
+            <div class="Inicio__img nomobile">
+              <picture>
+                <source srcset="img/home/home02.jpg" media="(min-width: 1081px"/>
+                <source srcset="img/home/home02l.jpg" media="(min-width: 800px"/>
+                <source srcset="img/home/home02m.jpg" media="(min-width: 600px"/>
+                <source srcset="img/home/home02s.jpg" media="(min-width: 100px"/><img src="img/maps/home/home02s.jpg" alt="Pan La Cochera"/>
+              </picture>
+              <!--img(src="img/home/home02.jpg" alt="pan La cochera")-->
+            </div>
+            <div class="Inicio__text">
+              <h2 class="section-title">Recetas con tradición</h2>
+              <p>Son más de 30 años los que llevamos creando productos de calidad con una meta en particular: crear sonrisas en cada bocado y en cada probada.</p>
+              <p>Queremos que tu experiencia en La Cochera sea llena de momentos dignos de recordar.</p>
+            </div>
+          </div>
+        </section>
+        <section class="banner right">
+          <picture>
+            <source srcset="img/home/home03.jpg" media="(min-width: 1081px"/>
+            <source srcset="img/home/home03l.jpg" media="(min-width: 800px"/>
+            <source srcset="img/home/home03m.jpg" media="(min-width: 600px"/>
+            <source srcset="img/home/home03s.jpg" media="(min-width: 100px"/><img src="img/maps/home/home03s.jpg" alt="Panadero La Cochera"/>
+          </picture>
+          <!--img(src="img/home/home03.jpg" alt="pastelero La cochera")-->
+        </section>
+      </main>
+      <footer class="main-footer" id="mainFooter">
+        <ul class="social-network">
+          <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
+          <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
+          <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
+        </ul>
+      </footer>
+      <!--section.is-mobile#isMobile-->
+      <!--  img(src="img/smartphonel.svg" alt="Cell phone")-->
+      <!--  p Por favor gire su teléfono-->
+      <script src="js/scripts-min.js?t=1571262520058"></script>
+    </div>
   </body>
 </html>

@@ -14,189 +14,199 @@
     <meta property="og:site_name" content="La Cochera Pasteleria">
     <meta property="og:url" content="https://sigmapcs.github.io/lacochera/tu-pastel.html">
     <link rel="canonical" href="https://sigmapcs.github.io/lacochera/tu-pastel.html">
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css?t=1571262520253">
+    <link rel="stylesheet" href="css/styles.css?t=1571262520253">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body class="Pastel">
-    <section class="modal loading" id="loading">
-      <div class="loading__container"><img src="img/logo.png" alt="Logotipo La cochera">
-        <div class="load" id="load"></div>
-      </div>
-    </section>
-    <header class="main-header" id="mainHeader"> 
-      <h1>La Cochera<span>Pasteleria fina desde 1986</span></h1>
-      <div class="logo-container"><a class="logo" href="index.html"><img class="main-logo" id="main-logo" src="img/logo.svg" alt="Logotipo La cochera"></a></div>
-      <div class="toggle-menu" id="toggle-menu"><img src="img/icons/menu.svg" alt="La cochera hamburger menu"></div>
-      <!--.menu-wraper#menu-wraper-->
-    </header>
-    <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
-      <ul class="main-menu" id="main-menu">
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
-        <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
-      </ul>
-    </nav>
-    <main class="main" id="main">
-      <section class="section-top main-section container full">
-        <div class="section-top-grid">
-          <div class="section-top-text">
-            <h2 class="section-title">Tu Pastel</h2>
-            <p>Crea tu pastel personalizado para esas fechas especiales. El proceso es muy fácil, sólo selecciona en el siguiente formato las especificaciones de lo que deseas, imprímelo, preséntalo en caja y ¡listo!.</p>
-            <p>El total de tu creación y el tiempo de entrega variará acorde a lo que hayas escogido. Cualquier duda puedes preguntarla a nuestro personal en tienda o mediante nuestra sección de Contacto.</p>
-          </div>
-          <div class="section-top-img"><img src="img/tupastel/tupastel1.jpg" alt="Pastel La cochera"></div>
+    <div class="wrapper-page">
+      <section class="modal loading" id="loading">
+        <div class="loading__container"><img src="img/logo.svg" alt="Logotipo La cochera">
+          <div class="load" id="load"></div>
         </div>
       </section>
-      <section class="main-section container formulario">
-        <h2 class="section-title center">Formulario</h2>
-        <form class="form" action="topdf" method="post" id="formPastel">
-          <div class="input-group">
-            <label for="person-number">Número de personas:</label>
-            <div class="box input">
-              <input id="person-number" name="person-number" required pattern="^\d+$">
+      <header class="main-header" id="mainHeader"> 
+        <h1>La Cochera<span>Pasteleria fina desde 1986</span></h1>
+        <div class="logo-container"><a class="logo" href="index.html"><img class="main-logo" id="main-logo" src="img/logo.svg" alt="Logotipo La cochera"></a></div>
+        <div class="toggle-menu" id="toggle-menu"><img src="img/icons/menu.svg" alt="La cochera hamburger menu"></div>
+        <!--.menu-wraper#menu-wraper-->
+      </header>
+      <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation" id="main-nav">
+        <ul class="main-menu" id="main-menu">
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="nosotros.html" itemprop="name">Nosotros</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="productos.html" itemprop="name">Productos</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="tu-pastel.html" itemprop="name">Tu Pastel</a></li>
+          <li class="main-menu__item" itemprop="url"><a class="main-menu__link" href="sucursales.html" itemprop="name">Sucursales</a></li>
+        </ul>
+      </nav>
+      <main class="main" id="main">
+        <section>
+          <div class="section-top-grid">
+            <div class="section-top-text">
+              <h2 class="section-title">Tu Pastel</h2>
+              <p>Crea tu pastel personalizado para esas fechas especiales. El proceso es muy fácil, sólo selecciona en el siguiente formato las especificaciones de lo que deseas, imprímelo, preséntalo en caja y ¡listo!.</p>
+              <p>El total de tu creación y el tiempo de entrega variará acorde a lo que hayas escogido. Cualquier duda puedes preguntarla a nuestro personal en tienda o mediante nuestra sección de Contacto.</p>
+            </div>
+            <div class="section-top-img">
+              <picture>
+                <source srcset="img/tupastel/tupastel1.jpg" media="(min-width: 1081px"/>
+                <source srcset="img/tupastel/tupastel1l.jpg" media="(min-width: 800px"/>
+                <source srcset="img/tupastel/tupastel1m.jpg" media="(min-width: 600px"/>
+                <source srcset="img/tupastel/tupastel1s.jpg" media="(min-width: 100px"/><img src="img/maps/tupastel/tupastel1s.jpg" alt="Pastel La cochera"/>
+              </picture>
+              <!--img(src=pageImage alt="Pastel La cochera")-->
             </div>
           </div>
-          <div class="input-group">
-            <label for="event-type">Tipo de Evento:</label>
-            <div class="box select">
-              <input id="event-type" name="event-type" required>
+        </section>
+        <section class="main-section container formulario">
+          <h2 class="section-title center">Formulario</h2>
+          <form class="form" action="topdf" method="post" id="formPastel">
+            <div class="input-group">
+              <label for="person-number">Número de personas:</label>
+              <div class="box input">
+                <input id="person-number" name="person-number" required pattern="^\d+$">
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="bread-type">Tipo de Pan:</label>
-            <div class="box select">
-              <select id="bread-type" name="bread-type" required>
-                <option value="0">Seleccione un tipo de pan</option>
-                <option value="Tres Leches">Tres Leches</option>
-                <option value="Mantequilla">Mantequilla</option>
-              </select>
+            <div class="input-group">
+              <label for="event-type">Tipo de Evento:</label>
+              <div class="box select">
+                <input id="event-type" name="event-type" required>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="bread-flavor">Sabor de Pan:</label>
-            <div class="box select">
-              <select id="bread-flavor" name="bread-flavor" required>
-                <option value="0">Elija un tipo de pan</option>
-              </select>
+            <div class="input-group">
+              <label for="bread-type">Tipo de Pan:</label>
+              <div class="box select">
+                <select id="bread-type" name="bread-type" required>
+                  <option value="0">Seleccione un tipo de pan</option>
+                  <option value="Tres Leches">Tres Leches</option>
+                  <option value="Mantequilla">Mantequilla</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="sizes">Tamaño:</label>
-            <div class="box select">
-              <select id="sizes" name="size" required>
-                <option value="Mini">Mini</option>
-                <option value="1/4 Pan">1/4 Pan</option>
-                <option value="1/2 Pan ">1/2 Pan </option>
-                <option value="1 Pan">1 Pan</option>
-                <option value="1 1/2 Pan">1 1/2 Pan</option>
-                <option value="2 Pan">2 Pan</option>
-                <option value="3 Pan">3 Pan</option>
-                <option value="4 Pan">4 Pan</option>
-              </select>
+            <div class="input-group">
+              <label for="bread-flavor">Sabor de Pan:</label>
+              <div class="box select">
+                <select id="bread-flavor" name="bread-flavor" required>
+                  <option value="0">Elija un tipo de pan</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="forma">Forma:</label>
-            <div class="box select">
-              <select id="forma" name="forma" required>
-                <option value="Redondo">Redondo</option>
-                <option value="Cuadrado">Cuadrado</option>
-                <option value="Rectangular">Rectangular</option>
-                <option value="Barra">Barra</option>
-                <option value="Rosca">Rosca</option>
-                <option value="Corazón">Corazón</option>
-                <option value="Flor">Flor</option>
-                <option value="Hexagonal">Hexagonal</option>
-              </select>
+            <div class="input-group">
+              <label for="sizes">Tamaño:</label>
+              <div class="box select">
+                <select id="sizes" name="size" required>
+                  <option value="Mini">Mini</option>
+                  <option value="1/4 Pan">1/4 Pan</option>
+                  <option value="1/2 Pan ">1/2 Pan </option>
+                  <option value="1 Pan">1 Pan</option>
+                  <option value="1 1/2 Pan">1 1/2 Pan</option>
+                  <option value="2 Pan">2 Pan</option>
+                  <option value="3 Pan">3 Pan</option>
+                  <option value="4 Pan">4 Pan</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="acomodo">Acomodo:</label>
-            <div class="box select">
-              <select id="acomodo" name="acomodo" required>
-                <option value="Plancha">Plancha</option>
-                <option value="Separado">Separado</option>
-                <option value="Pisos">Pisos</option>
-              </select>
+            <div class="input-group">
+              <label for="forma">Forma:</label>
+              <div class="box select">
+                <select id="forma" name="forma" required>
+                  <option value="Redondo">Redondo</option>
+                  <option value="Cuadrado">Cuadrado</option>
+                  <option value="Rectangular">Rectangular</option>
+                  <option value="Barra">Barra</option>
+                  <option value="Rosca">Rosca</option>
+                  <option value="Corazón">Corazón</option>
+                  <option value="Flor">Flor</option>
+                  <option value="Hexagonal">Hexagonal</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="relleno">Rellenos:</label>
-            <div class="box select">
-              <select id="relleno" name="relleno" required>
-                <option value="Fresa">Fresa</option>
-                <option value="Durazno">Durazno</option>
-                <option value="Piña">Piña</option>
-                <option value="Mermelada de Fresa">Mermelada de Fresa</option>
-                <option value="Mermelada de Piña">Mermelada de Piña</option>
-                <option value="Cajeta">Cajeta</option>
-                <option value="Toffil de Fresa">Toffil de Fresa</option>
-                <option value="Toffil de Piña">Toffil de Piña</option>
-              </select>
+            <div class="input-group">
+              <label for="acomodo">Acomodo:</label>
+              <div class="box select">
+                <select id="acomodo" name="acomodo" required>
+                  <option value="Plancha">Plancha</option>
+                  <option value="Separado">Separado</option>
+                  <option value="Pisos">Pisos</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="dibujo">Dibujo:</label>
-            <div class="box select">
-              <select id="dibujo" name="dibujo" required>
-                <option value="Dibujo">Dibujo</option>
-                <option value="Dibujo Mediano">Dibujo Mediano</option>
-                <option value="Dibujo Grande">Dibujo Grande</option>
-                <option value="Fondant Detalle Chico">Fondant Detalle Chico</option>
-                <option value="Fondant Mediano">Fondant Mediano</option>
-                <option value="Fondant Pastel Completo">Fondant Pastel Completo</option>
-                <option value="Liston Pastel">Liston Pastel</option>
-                <option value="Perlas Chica">Perlas Chica</option>
-                <option value="Perlas Mediana">Perlas Mediana</option>
-                <option value="Uvas y Espigas">Uvas y Espigas</option>
-                <option value="Rosetas Crema">Rosetas Crema</option>
-              </select>
+            <div class="input-group">
+              <label for="relleno">Rellenos:</label>
+              <div class="box select">
+                <select id="relleno" name="relleno" required>
+                  <option value="Fresa">Fresa</option>
+                  <option value="Durazno">Durazno</option>
+                  <option value="Piña">Piña</option>
+                  <option value="Mermelada de Fresa">Mermelada de Fresa</option>
+                  <option value="Mermelada de Piña">Mermelada de Piña</option>
+                  <option value="Cajeta">Cajeta</option>
+                  <option value="Toffil de Fresa">Toffil de Fresa</option>
+                  <option value="Toffil de Piña">Toffil de Piña</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group">
-            <label for="base">Base:</label>
-            <div class="box select">
-              <select id="base" name="base" required>
-                <option value="Sin Base">Sin Base</option>
-                <option value="Base De Pajaritos (3 Piezas)">Base De Pajaritos (3 Piezas)</option>
-                <option value="Base Arco">Base Arco</option>
-                <option value="Base Uvas">Base Uvas</option>
-                <option value="Base De Corazón">Base De Corazón</option>
-                <option value="Base Herrería Blanca">Base Herrería Blanca</option>
-                <option value="Escala Plateada de Herreria">Escala Plateada de Herreria</option>
-                <option value="Cristal Corazón">Cristal Corazón</option>
-                <option value="Cristal Pajaritos (5 Piezas)">Cristal Pajaritos (5 Piezas)</option>
-                <option value="Cristal Uvas (5 Piezas)">Cristal Uvas (5 Piezas)</option>
-                <option value="Cristal Escala Uvas (3 Uvas)">Cristal Escala Uvas (3 Uvas)</option>
-                <option value="Cristal Uvas a Desnivel (3 Piezas)">Cristal Uvas a Desnivel (3 Piezas)</option>
-              </select>
+            <div class="input-group">
+              <label for="dibujo">Dibujo:</label>
+              <div class="box select">
+                <select id="dibujo" name="dibujo" required>
+                  <option value="Dibujo">Dibujo</option>
+                  <option value="Dibujo Mediano">Dibujo Mediano</option>
+                  <option value="Dibujo Grande">Dibujo Grande</option>
+                  <option value="Fondant Detalle Chico">Fondant Detalle Chico</option>
+                  <option value="Fondant Mediano">Fondant Mediano</option>
+                  <option value="Fondant Pastel Completo">Fondant Pastel Completo</option>
+                  <option value="Liston Pastel">Liston Pastel</option>
+                  <option value="Perlas Chica">Perlas Chica</option>
+                  <option value="Perlas Mediana">Perlas Mediana</option>
+                  <option value="Uvas y Espigas">Uvas y Espigas</option>
+                  <option value="Rosetas Crema">Rosetas Crema</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="input-group textarea">
-            <label for="info">Información Adicional:</label>
-            <div class="box textarea" id="textarea">
-              <textarea id="info" name="info" maxlength="140"></textarea>
+            <div class="input-group">
+              <label for="base">Base:</label>
+              <div class="box select">
+                <select id="base" name="base" required>
+                  <option value="Sin Base">Sin Base</option>
+                  <option value="Base De Pajaritos (3 Piezas)">Base De Pajaritos (3 Piezas)</option>
+                  <option value="Base Arco">Base Arco</option>
+                  <option value="Base Uvas">Base Uvas</option>
+                  <option value="Base De Corazón">Base De Corazón</option>
+                  <option value="Base Herrería Blanca">Base Herrería Blanca</option>
+                  <option value="Escala Plateada de Herreria">Escala Plateada de Herreria</option>
+                  <option value="Cristal Corazón">Cristal Corazón</option>
+                  <option value="Cristal Pajaritos (5 Piezas)">Cristal Pajaritos (5 Piezas)</option>
+                  <option value="Cristal Uvas (5 Piezas)">Cristal Uvas (5 Piezas)</option>
+                  <option value="Cristal Escala Uvas (3 Uvas)">Cristal Escala Uvas (3 Uvas)</option>
+                  <option value="Cristal Uvas a Desnivel (3 Piezas)">Cristal Uvas a Desnivel (3 Piezas)</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <footer class="form-footer">
-            <button class="btn btn-download">Descargar</button>
-          </footer>
-        </form>
-      </section>
-    </main>
-    <footer class="main-footer" id="mainFooter">
-      <ul class="social-network">
-        <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
-        <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
-        <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
-      </ul>
-    </footer>
-    <!--section.is-mobile#isMobile-->
-    <!--  img(src="img/smartphonel.svg" alt="Cell phone")-->
-    <!--  p Por favor gire su teléfono-->
-    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
-    <script src="js/scripts-min.js"></script>
+            <div class="input-group textarea">
+              <label for="info">Información Adicional:</label>
+              <div class="box textarea" id="textarea">
+                <textarea id="info" name="info" maxlength="140"></textarea>
+              </div>
+            </div>
+            <footer class="form-footer">
+              <button class="btn btn-download">Descargar</button>
+            </footer>
+          </form>
+        </section>
+      </main>
+      <footer class="main-footer" id="mainFooter">
+        <ul class="social-network">
+          <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
+          <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
+          <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
+        </ul>
+      </footer>
+      <!--section.is-mobile#isMobile-->
+      <!--  img(src="img/smartphonel.svg" alt="Cell phone")-->
+      <!--  p Por favor gire su teléfono-->
+      <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+      <script src="js/scripts-min.js?t=1571262520253"></script>
+    </div>
   </body>
 </html>
