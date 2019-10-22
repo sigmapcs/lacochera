@@ -101,7 +101,20 @@ var selectsHeight = function selectsHeight(selects) {
   });
 };
 
-if (selects) selectsHeight(selects);
+if (selects) selectsHeight(selects); // (()=>{
+//   console.log('keydown')
+//   document.addEventListener('keydown', (e)=>{
+//     if (e.key==="Escape"){
+//       const modal = document.getElementById('modal')
+//       console.log(modal)
+//       console.log('escape')
+//       // if (modal) {
+//       //   let close = modal.querySelector('.modal__close')
+//       // }
+//
+//     }
+//   })
+// })()
 
 },{"./modules/active-menu":2,"./modules/form":3,"./modules/loading":4,"./modules/productos":5,"./modules/sucursales":6}],2:[function(require,module,exports){
 "use strict";
@@ -379,6 +392,7 @@ var showData = function showData(active, type) {
   if (type.indexOf(active) === lengthType) rS = 'noshow';
   var modal = document.createElement('div');
   modal.className = 'modal';
+  modal.id = "modal";
   modal.innerHTML = "\n    <div class=\"modal__close\"><img src=\"img/icons/close.svg\" alt=\"\" class=\"close\"></div>    \n    <div class=\"arrow left prev ".concat(lS, "\"><img src=\"img/icons/left.svg\" alt=\"\"></div>\n    <div class=\"arrow right next ").concat(rS, "\"><img src=\"img/icons/right.svg\" alt=\"\"></div>\n    <div class=\"modal__container\">\n        <img src=\"").concat(active.dataset.url, "\" class=\"modal__img\" alt=\"\">\n        <p class=\"modal__name\">").concat(active.dataset.name, "</p>\n        <p class=\"modal__description\">").concat(active.dataset.description, "</p>\n\n    </div>\n  ");
   document.body.appendChild(modal);
   closeModal(modal);
@@ -393,6 +407,9 @@ var closeModal = function closeModal(modal) {
     if (t.classList.contains('modal__close')) {
       modal.remove();
     }
+  });
+  document.addEventListener('keydown', function (e) {
+    e.key === "Escape" ? modal.remove() : null;
   });
 };
 
@@ -448,7 +465,8 @@ var sucursalMapHeight = function sucursalMapHeight(sucursales, isMobile) {
     el.addEventListener('click', function (e) {
       e.preventDefault();
       var t = e.target;
-      var parent = t.parentElement.parentElement;
+      console.log(t.offsetParent);
+      var parent = t.offsetParent;
 
       if (parent.classList.contains('sucursal__map')) {
         showMap(parent.dataset);
@@ -462,6 +480,7 @@ exports.sucursalMapHeight = sucursalMapHeight;
 var showMap = function showMap(data) {
   var modal = document.createElement('div');
   modal.className = 'modal modal-map';
+  modal.id = "modal";
   modal.innerHTML = "\n    <div class=\"modal__close\"><img src=\"img/icons/close.svg\" alt=\"\" class=\"close\"></div>\n    <div class=\"modal__container\">\n      <iframe src=\"".concat(data.map, "\" frameborder=\"0\"></iframe>\n    </div>\n  ");
   document.body.appendChild(modal);
   closeModal(modal);
@@ -475,6 +494,9 @@ var closeModal = function closeModal(modal) {
     if (t.classList.contains('modal__close')) {
       modal.remove();
     }
+  });
+  document.addEventListener('keydown', function (e) {
+    e.key === "Escape" ? modal.remove() : null;
   });
 };
 
