@@ -288,7 +288,7 @@ var createPDF = function createPDF(data) {
   doc.text(data.get('info'), posX, posY);
   doc.setFontSize(9);
   posY += 20;
-  doc.text('Por favor, imprime este documento y preséntalo en la sucursal de LA COCHERA de tu elección', 35, posY);
+  doc.text('Por favor, imprime este documento y preséntalo en la sucursal de LA COCHERA de tu elección.', 35, posY);
   doc.save('mi-pastel.pdf');
   alert('Documento creado con éxito');
 };
