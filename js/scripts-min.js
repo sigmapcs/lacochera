@@ -150,7 +150,7 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 var mantequilla = ["Chocolate", "Cappuccino", "Frappuchino", "Nuez", "Zanahoria", "Naranja", "Choco-Café", "Marquez", "Napolitano", "Selva Negra", "Rollo De Chocolate", "Monte Carlo", "Vienés", "Alas De Angel", "Mil Hojas", "4 Chocolates", "Dominó", "Cheese Cake"];
-var tresLeches = ["Moka", "Kahula", "3 Leches", "Crema de Caramelo"];
+var tresLeches = ["Moka", "Kahlúa", "3 Leches", "Crema de Caramelo"];
 
 var textarea = function textarea(textareaElem) {
   var textArea = textareaElem.querySelector('textarea');
@@ -244,7 +244,16 @@ var createPDF = function createPDF(data) {
   var imgHeight = imgWidth * .2265;
   var imgPosX = (pageWidth - imgWidth) / 2;
   doc.addImage(logo, 'JPG', imgPosX, 10, imgWidth, imgHeight);
+  doc.setFontSize(14);
+  doc.text('¡El formulario para crear Tu Pastel está listo!', 55, posY);
   doc.setFontSize(10);
+  posY += 20;
+  doc.text('Nombre:', 15, posY);
+  doc.text(data.get('name'), posX, posY);
+  posY += 10;
+  doc.text('Teléfono:', 15, posY);
+  doc.text(data.get('phone'), posX, posY);
+  posY += 10;
   doc.text('Numero de personas:', 15, posY);
   doc.text(data.get('person-number'), posX, posY);
   posY += 10;
@@ -279,7 +288,7 @@ var createPDF = function createPDF(data) {
   doc.text(data.get('info'), posX, posY);
   doc.setFontSize(9);
   posY += 20;
-  doc.text('Por favor, imprima este documento y presentelo en la sucursal de LA COCHERA de su elección', 35, posY);
+  doc.text('Por favor, imprime este documento y preséntalo en la sucursal de LA COCHERA de tu elección', 35, posY);
   doc.save('mi-pastel.pdf');
   alert('Documento creado con éxito');
 };

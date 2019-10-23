@@ -14,8 +14,8 @@
     <meta property="og:site_name" content="La Cochera Pasteleria">
     <meta property="og:url" content="https://sigmapcs.github.io/lacochera/tu-pastel.html">
     <link rel="canonical" href="https://sigmapcs.github.io/lacochera/tu-pastel.html">
-    <link rel="stylesheet" href="assets/fonts/stylesheet.css?t=1571780484273">
-    <link rel="stylesheet" href="css/styles.css?t=1571780484273">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css?t=1571789620871">
+    <link rel="stylesheet" href="css/styles.css?t=1571789620871">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body class="Pastel">
@@ -45,7 +45,7 @@
             <div class="section-top-text">
               <h2 class="section-title">Tu Pastel</h2>
               <p>Crea tu pastel personalizado para esas fechas especiales. El proceso es muy fácil, sólo selecciona en el siguiente formato las especificaciones de lo que deseas, imprímelo, preséntalo en caja y ¡listo!.</p>
-              <p>El total de tu creación y el tiempo de entrega variará acorde a lo que hayas escogido. Cualquier duda puedes preguntarla a nuestro personal en tienda.</p>
+              <p>El total de tu creación y el tiempo de entrega variará acorde a lo que hayas escogido. Cualquier duda puedes preguntarla a nuestro personal en tienda o a los teléfonos de nuestras sucursales.</p>
             </div>
             <div class="section-top-img">
               <!--+picture('tupastel/tupastel1','Pastel La cochera')--><img src="img/tupastel/tupastel1.jpg" alt="Pastel La cochera">
@@ -55,6 +55,18 @@
         <section class="main-section container formulario">
           <h2 class="section-title center">Formulario</h2>
           <form class="form" action="topdf" method="post" id="formPastel">
+            <div class="input-group">
+              <label for="name">Tu Nombre:</label>
+              <div class="box input">
+                <input id="name" name="name" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+              </div>
+            </div>
+            <div class="input-group">
+              <label for="phone">Tu Teléfono:</label>
+              <div class="box input">
+                <input id="phone" name="phone" required pattern="^[0-9]{10}">
+              </div>
+            </div>
             <div class="input-group">
               <label for="person-number">Número de personas:</label>
               <div class="box input">
@@ -191,8 +203,8 @@
       </main>
       <footer class="main-footer" id="mainFooter">
         <ul class="social-network">
-          <li><a href="#"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
-          <li><a href="#"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
+          <li><a href="https://www.facebook.com/pastelerialacochera" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook Icon"></a></li>
+          <li><a href="https://www.instagram.com/pasteleria_la_cochera_oficial/" target="_blank"><img src="img/icons/instagram.svg" alt="Instagram Icon"></a></li>
           <li><a href="#"><img src="img/icons/email.svg" alt="email Icon"></a></li>
         </ul>
       </footer>
@@ -200,7 +212,7 @@
       <!--  img(src="img/smartphonel.svg" alt="Cell phone")-->
       <!--  p Por favor gire su teléfono-->
       <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
-      <script src="js/scripts-min.js?t=1571780484273"></script>
+      <script src="js/scripts-min.js?t=1571789620871"></script>
     </div>
   </body>
 </html>
